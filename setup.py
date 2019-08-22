@@ -5,12 +5,12 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='django-admin-left-menu',
-    version='0.1',
+    version='0.1.1',
     include_package_data=True,
     license='BSD License',
     description='A simple left menu for DjangoAdmin',
     long_description=long_description,
-    long_description_context_type='text/markdown',
+    long_description_content_type='text/markdown',
     url='https://github.com/ChanMo/django-admin-left-menu',
     author='ChanMo',
     author_email='chan.mo@outlook.com',

@@ -5,7 +5,7 @@ A left menu for django admin
 ## Tutorials
 
 1. Install
-```
+```bash
 $ pip install django-admin-left-menu
 ```
 
@@ -13,19 +13,20 @@ $ pip install django-admin-left-menu
 ```python
 INSTALLED_APPS = [
 ...
+django.contrib.admin,
 xadmin,
 ...
 ]
 ```
 
 3. Copy base_site.html of django admin
-```
+```bash
 $ mkdir templates/admin -p
 $ wget https://raw.githubusercontent.com/django/django/master/django/contrib/admin/templates/admin/base.html templates/admin/base.html
 ```
 
 4. Add left menu code to base.html
-```
+```html
 ...
 <link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static "admin/css/base.css" %}{% endblock %}">
 <link rel="stylesheet" type="text/css" href="{% static "xadmin/app.css" %}">

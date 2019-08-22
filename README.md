@@ -1,23 +1,30 @@
-# XADMIN
+# Django Admin Left Menu
 
 A left menu for django admin
 
 ## Tutorials
 
-1. Download xadmin dir
+1. Install
 ```
-$ git clone https://github.com/ChanMo/django_xadmin.git
+$ pip install django-admin-left-menu
 ```
 
-2. Copy base_site.html of django admin
+2. Add xadmin to Installed Apps
+```python
+INSTALLED_APPS = [
+...
+xadmin,
+...
+]
+```
+
+3. Copy base_site.html of django admin
 ```
 $ mkdir templates/admin -p
 $ copy /path/to/django/admin/templates/admin/base_site.html templates/admin
 ```
 
-3. Add left menu code
+4. Add left menu code
 ```
 $ vim templates/admin/base_site.html
 ```
-
-4. Done

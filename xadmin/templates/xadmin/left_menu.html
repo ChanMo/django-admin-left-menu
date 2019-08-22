@@ -1,0 +1,8 @@
+<dl class='xadmin_container_left'>
+  {% for app in available_apps %}
+  <dt class='left_menu_title'>{{app.name}}</dt>
+  {% for link in app.models %}
+  <dd><a class='left_menu_link' href='{{link.admin_url}}'>{{link.name}}</a></dd>
+  {% endfor %}
+  {% endfor %}
+</dl>

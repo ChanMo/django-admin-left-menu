@@ -1,0 +1,45 @@
+/** django **/
+#content-main {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+.breadcrumbs {
+  margin-top: 1.5rem;
+  background-color: white !important;
+  color: #447e9b !important;
+}
+.breadcrumbs a {
+  color: rgba(0,0,0,0.56) !important;
+}
+}
+/** xadmin **/
+.xadmin_container {
+  display: flex;
+}
+.xadmin_container_right {
+  flex: 1;
+}
+.xadmin_container_left {
+  width:180px;
+  min-width: 180px;
+  padding:1rem;
+  list-style-type:none;
+}
+.left_menu_link {
+  display:block;
+  padding:.25rem 1rem;
+}
+.left_menu_link:hover {
+  background-color: #79aec8;
+  color: white;
+}
+.left_menu_title {
+  padding:.25rem 1rem;
+  margin-top:.5rem
+}
+
+@media screen and (max-width: 768px) {
+  .xadmin_container_left {
+    display: none;
+  }
+}

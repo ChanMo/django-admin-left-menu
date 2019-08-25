@@ -22,7 +22,7 @@ xadmin,
 3. Copy base_site.html of django admin
 ```bash
 $ mkdir templates/admin -p
-$ wget https://raw.githubusercontent.com/django/django/master/django/contrib/admin/templates/admin/base.html templates/admin/base.html
+$ wget https://raw.githubusercontent.com/django/django/master/django/contrib/admin/templates/admin/base.html -O templates/admin/base.html
 ```
 
 4. Add left menu code to base.html
